@@ -79,6 +79,18 @@ larger files are skipped and reported as unscored):
 WAI_API_KEY=wai_... python eval.py --adapter wai
 ```
 
+## Hidden split integrity
+
+The hidden 40% stays private so nobody can tune a detector on it. To show it does not change after the
+fact, [`2026-10/hidden-split-sha256.txt`](2026-10/hidden-split-sha256.txt) lists the SHA-256 of every hidden
+file (2,079 images, originals and copies), sorted. The SHA-256 of that list is
+
+```
+d4fca0f0d754f493cad7aebe25804f485bc7d917d88f9b28903665712ff44ec2
+```
+
+If we ever add, remove or swap a hidden file, this hash changes.
+
 ## Submit your detector
 
 Run your detector on the public split and email **patrick@wasitaigenerated.com** with your results and a way
@@ -96,4 +108,4 @@ page, including results that beat ours.
 
 AI-generated files: CC BY 4.0 (WasItAIGenerated). Real files keep their original license, listed per
 file in `metadata.csv` with author and source; CC BY and CC BY-SA files require attribution to the listed
-author when reused. Code: CC BY 4.0 (see `LICENSE`).
+author when reused. Code (`eval.py`): MIT (see `LICENSE`). Results and text in this repository: CC BY 4.0 (see `LICENSE-DATA`).
