@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "AI Image Detection Benchmark (WasItAIGenerated)"
+authors:
+  - name: "WasItAIGenerated Research"
+    website: "https://www.wasitaigenerated.com"
+date-released: 2026-10-28
+url: "https://github.com/wasitaigenerated/ai-image-detection-benchmark"
+repository-code: "https://github.com/wasitaigenerated/ai-image-detection-benchmark"
+license: CC-BY-4.0
